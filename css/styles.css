@@ -149,7 +149,9 @@ ul{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bacground-imag/image1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:1440px auto;
+    background-size:cover;
+    max-width: 1440px;
+    margin: 0 auto;
     
     
    
@@ -231,11 +233,12 @@ ul{
 .adventages-list {
     display: flex;
     gap: 24px;
+    width: calc((100%-72px)/4);
    
 }
 
 .adventages-item {
-    width: calc((100%-72px) / 4);
+   
 }
 
 .adventages-title {
@@ -256,7 +259,8 @@ ul{
 
 .advantages-icon {
     display: flex;
-    padding: 24px 100px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 8px;
     background-color:var(--white-logo);
     width: 264px;
@@ -397,14 +401,31 @@ ul{
 
 }
 
+.our-team-social-icon{
+
+}
+
+
+.our-times-social-link:hover,
+.our-times-social-link:focus{
+    box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  
+}
+
+.our-team-social-icon:hover,
+.our-team-social-icon:focus{
+
+}
+
+
 /*-----/our team-------*/
 
 /*----customers-------*/
 
 .customers-section {
-    padding: 120px 0;
+    padding: 34px 156px 120px 156px;
    
-    display: flex;
+    
 }
 
 .customers-container {
@@ -427,6 +448,7 @@ ul{
 .customers-list {
     display: flex;
     gap: 24px;
+    justify-content: center;
     
  
 
@@ -435,9 +457,7 @@ ul{
 .customers-item {
     width: 168px;
     height: 88px;
-    padding: 12px 32px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
+    
    
 }
 
@@ -446,17 +466,52 @@ ul{
    
 }
 
+.customer-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+
+}
+
+.customer-link:hover,
+.customer-link:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+  
+}
+
 /*----/customers-------*/
 
 /*-----footer-------*/
 
 .footer {
+    
+}
+
+.container-footer{
     background-color:var(--brand-color); 
     padding: 100px 156px;
+    
+
+
+}
+
+.footer-main-list{
     display: flex;
 
 }
 
+.footer-list{
+    margin-right: 120px;
+}
+
+.footer-logo-section{
+
+}
 .footer-logo {
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
@@ -477,15 +532,6 @@ ul{
     color: var(--footer-text);
     max-width: 264px;
     margin-left: 0;
-}
-
-.container-footer-logo{
-   margin-right: 120px;
-
-}
-
-.container-footer-social{
-
 }
 
 .footer-social-lisst {
@@ -520,6 +566,13 @@ ul{
         line-height:1.5;
         letter-spacing: 0.02em;
         color: var(--white);
+
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover{
+    box-shadow: 0px 4px 4px 0px  rgba(0, 0, 0, 0.25);
+   
 
 }
 
@@ -599,6 +652,7 @@ ul{
 /*-----cards-------*/
 
 .cards{
+    width: calc((100% - 48px) / 3);
     padding-bottom: 120px;
 
 }
@@ -611,7 +665,8 @@ ul{
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-}
+}   
+
 .cards-items {
     
 }
@@ -620,13 +675,12 @@ ul{
 .cards-items:hover,
 .cards-border:focus,
 .cards-border:hover  {
-    border-color: var(--white-logo);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),0px 1px 1px 0px rgba(46, 47, 66, 0.16);
 }
 
 
 .cards-link {
-    width: calc((100% - 48px) / 3);
+   
 }
 
 
@@ -659,11 +713,6 @@ ul{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--gray);
-}
-
-.cards-title:hover,
-.cards-text:hover{
-    color:var(--ocean);
 }
 
 
