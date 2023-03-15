@@ -489,12 +489,21 @@ ul{
 /*-----footer-------*/
 
 .footer {
+    background-color:var(--brand-color); 
+    background-position: center;
+    padding: 100px 156px;
     
 }
 
 .container-footer{
-    background-color:var(--brand-color); 
-    padding: 100px 156px;
+    
+    
+    
+    width: 1158px;
+    margin: 0 auto;
+   
+
+
     
 
 
@@ -502,6 +511,7 @@ ul{
 
 .footer-main-list{
     display: flex;
+
 
 }
 
